@@ -93,3 +93,9 @@
   categories: [Dictionaries]
   device: [Web]
 
+- name: Thirukural AI
+  description:  Ask questions about Thirukural & Thiruvalluvar
+  url: "https://www.thirukural.ai"
+  categories: [Tools]
+  device: [Web]
+
