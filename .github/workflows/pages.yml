@@ -1,0 +1,43 @@
+name: Deploy Fork to GitHub Pages
+
+on:
+  push:
+    branches:
+      - preview   # or whatever branch you’re editing in your fork
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v5
+
+      - name: Build site
+        run: |
+          pip install dirmaker
+          dirmaker build data.yml templates/ site/
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload static files as artifact
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: site/
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
