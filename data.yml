@@ -6,11 +6,6 @@
     - Resources
   device:
     - Web
-- name: Baloo Thambi 2
-  description: Comprehensive ligature Tamil font from EkType.
-  url: https://ektype.in/font-family/baloo/baloo-thambi2.html
-  categories:
-    - Fonts
 - name: Kaniyam
   description: கட்டற்ற கணிநுட்பம்
   url: https://kaniyam.com/
