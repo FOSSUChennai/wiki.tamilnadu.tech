@@ -155,6 +155,7 @@ footer {
 		display: inline-block;
 	}
 
+
 .toggle-filters {
 	font-size: var(--size-xsmall);
 	float: right;
@@ -226,6 +227,20 @@ footer {
   backface-visibility: hidden;
   perspective: 1000px;
 }
+
+.github-logo{
+	 margin-bottom: 0px;
+	 margin-top: -10px;
+}
+.contribute-txt{
+	margin-top: -24px;
+	font-size: 12px;
+	margin-left: 6px;
+	color:var(--light)
+}
+.sm-git-logo{
+	display: none;
+}
 @keyframes shake {
 	0% {
 		scale: 1;
@@ -248,12 +263,14 @@ footer {
 	.wrap {
 		padding: 15px;
 	}
+	
 	.header {
 		display: block;
 		margin: 0;
 	}
 	#burger {
 		display: block;
+		margin-top: 16px;
 	}
 	.search {
 		float: none;
@@ -275,4 +292,18 @@ footer {
 		#items .taxonomies .group {
 			display: block;
 		}
+	.git-desk-logo{
+		display: none;
+		
+	}
+	.sm-git-logo{
+		display:flex;
+		float:right;
+		
+
+	}
+	.sm-git-logo .git-logo{
+		margin-top: -4px;
+		scale: 0.6;
+	}
 }
