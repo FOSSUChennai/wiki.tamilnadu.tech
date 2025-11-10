@@ -137,3 +137,10 @@
   url: https://github.com/HariharanUmapathi/open-tamil-php
   categories:
     - Tools
+- name: Tamilpulavar
+  description: Collection of tamil dictionaries,Yappuanalyser,Santham Analyzer
+  url: https://tamilpulavar.kaniyam.ca
+  categories:
+    - Dictionaries
+  device:
+    - Web
