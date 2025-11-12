@@ -28,7 +28,7 @@
     - Web
 - name: வாணி
   description: எழுத்துப்பிழை திருத்தி
-  url: எழுத்துப்பிழை திருத்தி
+  url: https://vaanieditor.com/
   categories:
     - Tools
   device:
@@ -68,7 +68,7 @@
   description: "Open Tamil on the web platform hosts the free-software language
     processing applications present within library open-tamil, for processing
     Tamil language text, numbers, scripts. "
-  url: https://tamilpesu.us/en/
+  url: https://tamilpesu.in/en/
   categories:
     - Resources
   device:
@@ -144,3 +144,12 @@
     - Dictionaries
   device:
     - Web
+- name: Tamil Lemmatizer
+  description: Tamil Lemmatizer is a character-level sequence model that
+    converts inflected Tamil words into their base (lemma) form.
+    It is built using PyTorch and supports lemmatization of both verbs and
+    nouns. The model generalizes well even for unseen words through
+    character-level encoding.
+  url: https://github.com/Hemanthkumar2112/tamil-lemmatizer
+  categories:
+    - Code
